@@ -52,6 +52,7 @@ class MyHomeSpider(Spider):
             amenities='#main_block > div.detail-page > div.amenities span:not(.no) *::text',
             price_gel='#main div.price-toggler-wrapper span::attr(data-price-gel)',
             price_usd='#main div.price-toggler-wrapper span::attr(data-price-usd)',
+            price_box_raw='#main div.price-toggler-wrapper',
             guest_num='#main_block > div.detail-page > aside > div.price-box > div._asd > div.persons > span:not(.no) *::text',
             lat='#map ::attr(data-lat)',
             lng='#map ::attr(data-lng)',
