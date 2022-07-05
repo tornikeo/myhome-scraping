@@ -21,7 +21,6 @@ ROBOTSTXT_OBEY = False # Breakin' the law 😎
 
 FEED_EXPORT_ENCODING = 'utf-8'
 
-
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 

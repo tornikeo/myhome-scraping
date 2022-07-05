@@ -46,10 +46,10 @@ class MyHomeSpider(Spider):
         selectors = dict(
             title='#main_block > div.detail-page > div.statement-header > div.statement-title *:not(svg)::text',
             stats='#main_block > div.detail-page > div.statement-header > div.info.d-flex.flex-wrap span::text',
-            author='#main_block > div.detail-page > div.statement-author.align-items-center.flex-wrap > div:nth-child(2) *:not(svg)::text',
+            author='#main_block > div.detail-page > div.statement-author.align-items-center.flex-wrap a.see-all-statements',
             main_features='#main_block > div.detail-page > div.main-features.row.no-gutters span::text ',
             text_desc='#main_block > div.detail-page > div.description > div:nth-child(2) > div *:not(svg)::text',
-            amenities='#main_block > div.detail-page > div.amenities span *::text',
+            amenities='#main_block > div.detail-page > div.amenities span:not(.no) *::text',
             price_gel='#main div.price-toggler-wrapper span::attr(data-price-gel)',
             price_usd='#main div.price-toggler-wrapper span::attr(data-price-usd)',
             guest_num='#main_block > div.detail-page > aside > div.price-box > div._asd > div.persons > span:not(.no) *::text',
